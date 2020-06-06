@@ -17,12 +17,16 @@ We've also set up an email confirmation once an appointment is booked in our app
 
 #### patient ####
 
+| Account | Details |
+| ----------- | ----------- |
 | username      | patient1         |
 | email      | patient1@gmail.com         |
 | password      | patient1         |
 
 #### doctor ####
 
+| Account | Details |
+| ----------- | ----------- |
 | username      | doctor1         |
 | email      | doctor1@gmail.com         |
 | password      | doctor1         |
