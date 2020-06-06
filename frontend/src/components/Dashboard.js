@@ -164,8 +164,7 @@ export default function Dashboard(props) {
 
             <Grid item xs={12} md={4} lg={5}>
               <Paper className={fixedHeightPaper}>
-                {patient && <h1 className='title'> Most recent appointments </h1>}
-                {doctor && <h1 className='title'> Today's appointments </h1>}
+                <h1 className='title'> Most recent appointments </h1>
                 {doctor && singleUser.appointment.map((info, i) => {
                   return <p className='content' key={i}>
                     {info.date} at {info.time}
