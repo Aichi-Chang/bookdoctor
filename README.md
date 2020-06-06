@@ -1,4 +1,4 @@
-### 🚩 Bookdoctor ###
+# Bookdoctor 
 
 Due to COVID and NHS found cut, our NHS has difficulties to cope with the current situation. There are too many patients and not enough staff to help them. Therefore I worked with other developers to create this online GP appointment booking system. 
 
@@ -11,15 +11,30 @@ The other part of the booking system is, patients never know when a doctor is av
 We've also set up an email confirmation once an appointment is booked in our application's beta period. It might change in the future that rather than sending out an email to confirm, we will also send out an email or an SMS as a reminder 2 days before their appointments.
 
 
-#### Visit the site here - [Bookdoctor](https://bookdoctor.herokuapp.com/)
+#### Visit the site here → [Bookdoctor](https://bookdoctor.herokuapp.com/)
+
+#### We've created a couple testing account for you to test
+#### patient ####
+| username      | patient1         |
+| email      | patient1@gmail.com         |
+| password      | patient1         |
+#### doctor ####
+| username      | doctor1         |
+| email      | doctor1@gmail.com         |
+| password      | doctor1         |
+
+You can also register your own account(with real email). Please note that once registered, you're agree to us using and processing your data as your username will show in the doctors' patient list, and you will get an email sent from us if you book an appointment.
 
 
-### 🎥 Preview ###
+--
+
+
+### 🎥 Preview 
 ![ezgif com-video-to-gif](https://media.giphy.com/media/YrO11LriPyQZXQ1LP3/giphy.gif)
 
+--
 
-
-### 💎 features ###
+### 💎 features 
 - Set the default in the backend, user cannot choose the role while registering. The default role is ‘patient’. Doctors are registered as seeds in the database.
 
 - When an appointment is created, an appointment object will be created in the appointment collection in the database and be pushed to both doctor's and patient's appointment array. It also worked when deleting an appointment, the specific appointment object will be removed from these three collections.
@@ -32,8 +47,9 @@ We've also set up an email confirmation once an appointment is booked in our app
 
 - The confirmation email system will send out an email to confirm your appointment once booked.
 
+--
 
-### :rocket: Get Started Locally ###
+### :rocket: Get Started Locally
 
 * Clone or download the repo
 * `npm install` to install all the dependencies
@@ -42,15 +58,16 @@ We've also set up an email confirmation once an appointment is booked in our app
 * `npm run serve:back` to run backend
 * `npm run serve:front` to run frontend
 
+--
 
-
-### 🕹 Main Technologies Used ###
+### 🕹 Main Technologies Used
 
 #### Backend: ####
 *Express
 *NodeJS 
 *MongoDB Atlas
 *Mongoose
+*Nodemon
 *JWT
 *SendGrid
 *NHS Corona Virus API
@@ -60,7 +77,8 @@ We've also set up an email confirmation once an appointment is booked in our app
 *SASS & CSS
 *MaterialUI
 *Bulma
-*Art works credit to United Nation Covid19 Reponse
+*Google fonts
+*Art works by United Nation Covid19 Reponse
 #### Version Control: ####
 *Git
 *GitHub
@@ -70,8 +88,9 @@ We've also set up an email confirmation once an appointment is booked in our app
 *Babel (JavaScript transcompiler)
 *Webpack (JavaScript module bundler)
 
+--
 
-### ✔️ Approach Taken ###
+### ✔️ Approach Taken
 
 #### Project Plan ####
 - Ideas research, Team brief, set up Trello
@@ -85,25 +104,65 @@ We've also set up an email confirmation once an appointment is booked in our app
 - Styling and Troubleshooting
 - Deployment (debug and deploy)
 
+--
+
+### 🧐 Chanllenges
+
+#### User control
+As we want patients and doctors can both use this app. In order to create two different colelctions in the databas, it's easier and DRYer to set a user control in our backend. When user requests an action, the backend middleware will check if this user has the correct authorization for it.
+
+```js
+  role: {
+    type: String,
+    enum: ['doctor', 'patient', 'admin'],
+    default: 'patient'
+  }
+```
+```js
+router.post('/history', secureRoute, userControl('doctor'),
+  [
+    check('content').not().isEmpty().trim().escape()
+  ],  historyFunc.create)
+```
+
+#### Check if the appointment is available and all parties got their appointment booked
+To prevent this problem, the backend will first check in the appoinement collection and if no object matches, it will go to the next step which will create the appointment and push them to the correct users.
+
+```js
+const appoint = Appointment.findOne({ date: req.body.date, time: req.body.time, doctor: req.body.doctor }).exec()
+    appoint
+      .then(function(appointmentItem) {
+        if (!appointmentItem) {
+          console.log('Appointment available')
+          Appointment
+            .create(req.body)
+            .then(async function(appointment) {
+              try {
+                const promise1 = User.findOneAndUpdate({ _id: req.currentUser._id }, { $push: { appointment: appointment } }, { new: true })
+                const promise2 = User.findOneAndUpdate({ username: req.body.doctor }, { $push: { appointment: appointment } }, { new: true })
+                ...
+```
+
+#### Proxy error between dev server and API
+This error occured when I set a delete function child component. The delete function was using axios to delete the specific appointment by id and reload the page. When the error showed up, I thought the problem is in the webpack, and this is the answer I've found: [React proxy error - ECONNREFUSED](https://stackoverflow.com/questions/50107816/react-proxy-error-could-not-proxy-request-api-from-localhost3000-to-http-l)
+
+But this didn't fix the problem, so I then tested the API delete route endpint but it works fine. This is another solution: [Proxy error in register from](https://stackoverflow.com/questions/57858311/error-occured-while-trying-to-proxy-to-localhost3000-api-register-in-register) 
+
+One thing I've noticed is that, in nodemon, the server shows delete appointment and right after it tries to get the user profile and booked appointment straight away. This made me think that it could be the asynchronous when deleting the data. After rewrote the delete function to an async funtion has 
+solved the problem.
 
 
-### 🧐 Chanllenges ###
 
+--
 
-
-
-### 🤗 Lesson Learned ###
-
-
-
-### 📸 snapshots ###
+### 📸 Snapshots
 ![homepage](./assets/home.png)
 ![booking](./assets/booking.png)
 ![dashboard](assets/dashboard.png)
 
+--
 
-
-### 🔮 Potential future features ###
+### 🔮 Potential Future Features ###
 
 
 
