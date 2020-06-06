@@ -15,7 +15,7 @@ We've also set up an email confirmation once an appointment is booked in our app
 
 
 ### Preview
-<iframe src="https://giphy.com/embed/UVGbG91XEPE4601aKz" width="480" height="242" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/UVGbG91XEPE4601aKz">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/UVGbG91XEPE4601aKz" width="480" height="242" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 
 
