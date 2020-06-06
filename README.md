@@ -15,7 +15,7 @@ We've also set up an email confirmation once an appointment is booked in our app
 
 
 ### 🎥 Preview ###
-![ezgif com-video-to-gif](https://media.giphy.com/media/YrO11LriPyQZXQ1LP3/200w_d.gif)
+![ezgif com-video-to-gif](https://media.giphy.com/media/YrO11LriPyQZXQ1LP3/giphy.gif)
 
 
 
@@ -47,27 +47,27 @@ We've also set up an email confirmation once an appointment is booked in our app
 ### 🕹 Main Technologies Used ###
 
 #### Backend: ####
-*Express, 
-*NodeJS, 
-*MongoDB Atlas, 
-*Mongoose, 
-*JWT, 
-*SendGrid, 
+*Express
+*NodeJS 
+*MongoDB Atlas
+*Mongoose
+*JWT
+*SendGrid
 *NHS Corona Virus API
 #### Frontend & UI: ####
-*JavaScript, 
-*React, 
-*SASS & CSS, 
-*MaterialUI, 
-*Bulma,
+*JavaScript
+*React
+*SASS & CSS
+*MaterialUI
+*Bulma
 *Art works credit to United Nation Covid19 Reponse
 #### Version Control: ####
-*Git, 
+*Git
 *GitHub
 #### Other: ####
-*Insomnia (API test), 
-*Heroku (cloud platform for deployment), 
-*Babel (JavaScript transcompiler), 
+*Insomnia (API test)
+*Heroku (cloud platform for deployment)
+*Babel (JavaScript transcompiler)
 *Webpack (JavaScript module bundler)
 
 
@@ -100,7 +100,6 @@ We've also set up an email confirmation once an appointment is booked in our app
 ![homepage](./assets/home.png)
 ![booking](./assets/booking.png)
 ![dashboard](assets/dashboard.png)
-![about](assets/about.png)
 
 
 
