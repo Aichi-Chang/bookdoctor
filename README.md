@@ -15,9 +15,7 @@ We've also set up an email confirmation once an appointment is booked in our app
 
 
 ### Preview
-<video width="320" height="240" controls>
-  <source src="https://media.giphy.com/media/UVGbG91XEPE4601aKz/giphy.mp4" type="video/mp4">
-</video>
+![](https://media.giphy.com/media/UVGbG91XEPE4601aKz/giphy.mp4)
 
 
 
