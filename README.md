@@ -14,11 +14,15 @@ We've also set up an email confirmation once an appointment is booked in our app
 #### Visit the site here → [Bookdoctor](https://bookdoctor.herokuapp.com/)
 
 #### We've created a couple testing account for you to test
+
 #### patient ####
+
 | username      | patient1         |
 | email      | patient1@gmail.com         |
 | password      | patient1         |
+
 #### doctor ####
+
 | username      | doctor1         |
 | email      | doctor1@gmail.com         |
 | password      | doctor1         |
@@ -26,13 +30,13 @@ We've also set up an email confirmation once an appointment is booked in our app
 You can also register your own account(with real email). Please note that once registered, you're agree to us using and processing your data as your username will show in the doctors' patient list, and you will get an email sent from us if you book an appointment.
 
 
---
+
 
 
 ### 🎥 Preview 
 ![ezgif com-video-to-gif](https://media.giphy.com/media/YrO11LriPyQZXQ1LP3/giphy.gif)
 
---
+
 
 ### 💎 features 
 - Set the default in the backend, user cannot choose the role while registering. The default role is ‘patient’. Doctors are registered as seeds in the database.
@@ -47,48 +51,55 @@ You can also register your own account(with real email). Please note that once r
 
 - The confirmation email system will send out an email to confirm your appointment once booked.
 
---
+
 
 ### :rocket: Get Started Locally
 
 * Clone or download the repo
 * `npm install` to install all the dependencies
-* `mongod --dbpath ~/data/db`  or `mongod` (if you Mac is majovee version)
+* `mongod dbpath ~/data/db`  or `mongod` (if you Mac is majovee version)
 * `npm run seed`
 * `npm run serve:back` to run backend
 * `npm run serve:front` to run frontend
 
---
+
 
 ### 🕹 Main Technologies Used
 
 #### Backend: ####
-*Express
-*NodeJS 
-*MongoDB Atlas
-*Mongoose
-*Nodemon
-*JWT
-*SendGrid
-*NHS Corona Virus API
-#### Frontend & UI: ####
-*JavaScript
-*React
-*SASS & CSS
-*MaterialUI
-*Bulma
-*Google fonts
-*Art works by United Nation Covid19 Reponse
-#### Version Control: ####
-*Git
-*GitHub
-#### Other: ####
-*Insomnia (API test)
-*Heroku (cloud platform for deployment)
-*Babel (JavaScript transcompiler)
-*Webpack (JavaScript module bundler)
 
---
+* Express
+* NodeJS 
+* MongoDB Atlas
+* Mongoose
+* Nodemon
+* JWT
+* SendGrid
+* NHS Corona Virus API
+
+#### Frontend & UI: ####
+
+* JavaScript
+* React
+* SASS & CSS
+* MaterialUI
+* Bulma
+* Google fonts
+* Art works by United Nation Covid19 Reponse
+
+#### Version Control: ####
+
+* Git
+* GitHub
+
+#### Other: ####
+
+* Insomnia (API test)
+* Heroku (cloud platform for deployment)
+* Babel (JavaScript transcompiler)
+* Webpack (JavaScript module bundler)
+
+
 
 ### ✔️ Approach Taken
 
@@ -104,7 +115,7 @@ You can also register your own account(with real email). Please note that once r
 - Styling and Troubleshooting
 - Deployment (debug and deploy)
 
---
+
 
 ### 🧐 Chanllenges
 
@@ -153,14 +164,14 @@ solved the problem.
 
 
 
---
+
 
 ### 📸 Snapshots
 ![homepage](./assets/home.png)
 ![booking](./assets/booking.png)
 ![dashboard](assets/dashboard.png)
 
---
+
 
 ### 🔮 Potential Future Features ###
 
