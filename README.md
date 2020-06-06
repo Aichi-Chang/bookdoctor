@@ -15,11 +15,11 @@ We've also set up an email confirmation once an appointment is booked in our app
 
 
 ### Preview
-![](https://media.giphy.com/media/UVGbG91XEPE4601aKz/200w_d.gif)
+<iframe src="https://giphy.com/embed/UVGbG91XEPE4601aKz" width="480" height="242" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/UVGbG91XEPE4601aKz">via GIPHY</a></p>
 
 
 
-### 💎features ###
+### 💎 features ###
 * Set the default in the backend, user cannot choose the role while registering. The default role is ‘patient’. Doctors are registered as seeds in the database.
 
 * When an appointment is created, an appointment object will be created in the appointment collection in the database and be pushed to both doctor's and patient's appointment array. It also worked when deleting an appointment, the specific appointment object will be removed from these three collections.
