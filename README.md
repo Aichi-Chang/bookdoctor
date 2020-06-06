@@ -15,8 +15,8 @@ We've also set up an email confirmation once an appointment is booked in our app
 
 
 ### Preview
-![ezgif com-video-to-gif](https://media.giphy.com/media/UVGbG91XEPE4601aKz/200w_d.gif)
-![ezgif com-video-to-gif](https://media.giphy.com/media/KH2wtSOYICMd5WOpJT/200w_d.gif)
+![ezgif com-video-to-gif](https://media.giphy.com/media/UVGbG91XEPE4601aKz.gif)
+![ezgif com-video-to-gif](https://media.giphy.com/media/KH2wtSOYICMd5WOpJT.gif)
 
 
 
