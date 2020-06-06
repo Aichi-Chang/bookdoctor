@@ -154,6 +154,26 @@ const appoint = Appointment.findOne({ date: req.body.date, time: req.body.time, 
                 ...
 ```
 
+#### Showing different doctors' appointments
+What I did was set a handle change function in the selectDoc.js. Everytime when user selects a diffent doctor, it will update its parent component(which is the BookAppointment.js) reset the state and pass as props to the calendar component(which is the Picker.js).
+
+**BookAppointment.js**
+```js
+    <SelectDoc 
+      update={setData}
+      data={data}
+    />
+```
+
+**SelectDoc.js**
+```js
+function handleChange(e) {
+    setSelect({ [e.target.name]: e.target.value })
+    update({ ...data, [e.target.name]: e.target.value })
+  }
+```
+
+
 #### Proxy error between dev server and API
 This error occured when I set a delete function child component. The delete function was using axios to delete the specific appointment by id and reload the page. When the error showed up, I thought the problem is in the webpack, and this is the answer I've found: [React proxy error - ECONNREFUSED](https://stackoverflow.com/questions/50107816/react-proxy-error-could-not-proxy-request-api-from-localhost3000-to-http-l)
 
@@ -161,9 +181,6 @@ But this didn't fix the problem, so I then tested the API delete route endpint b
 
 One thing I've noticed is that, in nodemon, the server shows delete appointment and right after it tries to get the user profile and booked appointment straight away. This made me think that it could be the asynchronous when deleting the data. After rewrote the delete function to an async funtion has 
 solved the problem.
-
-
-
 
 
 ### 📸 Snapshots
