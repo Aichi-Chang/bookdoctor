@@ -15,8 +15,9 @@ We've also set up an email confirmation once an appointment is booked in our app
 
 
 ### Preview
-![ezgif com-video-to-gif](https://media.giphy.com/media/UVGbG91XEPE4601aKz/giphy.mp4)
-
+<video width="320" height="240" controls>
+  <source src="assets/patient-login-book.mov" type="video/mp4">
+</video>
 
 
 
