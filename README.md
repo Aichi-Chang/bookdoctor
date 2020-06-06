@@ -14,7 +14,7 @@ We've also set up an email confirmation once an appointment is booked in our app
 #### Visit the site here - [Bookdoctor](https://bookdoctor.herokuapp.com/)
 
 
-### Preview
+### 📸 Preview
 
 
 
@@ -47,30 +47,27 @@ We've also set up an email confirmation once an appointment is booked in our app
 ### 🕹 Technologies used ###
 
 #### Backend:
-* Express
-* NodeJS
-* MongoDB Atlas
-* Mongoose
-* JWT
-* SendGrid
-* NHS Corona Virus API
-
+Express
+NodeJS
+MongoDB Atlas
+Mongoose
+JWT
+SendGrid
+NHS Corona Virus API
 #### Frontend & UI:
-* JavaScript
-* React
-* SASS & CSS
-* MaterialUI
-* Bulma
-
+JavaScript
+React
+SASS & CSS
+MaterialUI
+Bulma
 #### Version Control: 
-* Git 
-* GitHub
-
+Git 
+GitHub
 #### Other
-* Insomnia (API test)
-* Heroku (cloud platform for deployment)
-* Babel (JavaScript transcompiler)
-* Webpack (JavaScript module bundler)
+Insomnia (API test)
+Heroku (cloud platform for deployment)
+Babel (JavaScript transcompiler)
+Webpack (JavaScript module bundler)
 
 
 
