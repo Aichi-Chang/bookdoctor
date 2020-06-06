@@ -155,7 +155,7 @@ const appoint = Appointment.findOne({ date: req.body.date, time: req.body.time, 
 ```
 
 #### Showing different doctors' appointments
-What I did was set a handle change function in the selectDoc.js. Everytime when user selects a diffent doctor, it will update its parent component(which is the BookAppointment.js) reset the state and pass as props to the calendar component(which is the Picker.js).
+I set a handle change function in the selectDoc.js. Everytime when user selects a diffent doctor, it will update its parent component(which is the BookAppointment.js) reset the state and pass as props to the calendar component(which is the Picker.js).
 
 **BookAppointment.js**
 ```js
