@@ -9,10 +9,6 @@
 
 * similar rule for patient history, the small differences are that history will be able to written(create) by doctor, and it will only be created and be pushed to patient's history array.
 
-test 1
 
-add logout function in dashboard
-add book appointments in navbar - connected to local storage
-material ui icons for book appointments, login, logout, for all possibly
 
 
