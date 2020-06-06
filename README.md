@@ -11,7 +11,7 @@ The other part of the booking system is, patients never know when a doctor is av
 We've also set up an email confirmation once an appointment is booked in our application's beta period. It might change in the future that rather than sending out an email to confirm, we will also send out an email or an SMS as a reminder 2 days before their appointments.
 
 
-Visit the site here - [CO2 Emission Calculator](https://bookdoctor.herokuapp.com/)
+Visit the site here - [Bookdoctor](https://bookdoctor.herokuapp.com/)
 
 
 #### Preview
