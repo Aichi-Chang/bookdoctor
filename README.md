@@ -47,26 +47,26 @@ We've also set up an email confirmation once an appointment is booked in our app
 ### 🕹 Technologies used ###
 
 #### Backend:
-Express
-NodeJS
-MongoDB Atlas
-Mongoose
-JWT
-SendGrid
+Express, 
+NodeJS, 
+MongoDB Atlas, 
+Mongoose, 
+JWT, 
+SendGrid, 
 NHS Corona Virus API
 #### Frontend & UI:
-JavaScript
-React
-SASS & CSS
-MaterialUI
+JavaScript, 
+React, 
+SASS & CSS, 
+MaterialUI, 
 Bulma
 #### Version Control: 
-Git 
+Git , 
 GitHub
-#### Other
-Insomnia (API test)
-Heroku (cloud platform for deployment)
-Babel (JavaScript transcompiler)
+#### Other: 
+Insomnia (API test), 
+Heroku (cloud platform for deployment), 
+Babel (JavaScript transcompiler), 
 Webpack (JavaScript module bundler)
 
 
