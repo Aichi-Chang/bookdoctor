@@ -13,19 +13,15 @@ We've also set up an email confirmation once an appointment is booked in our app
 
 #### 🔥 Visit the site here → [Bookdoctor](https://bookdoctor.herokuapp.com/) 🔥
 
-#### We've created a couple testing account for you to test
+#### We've created a couple testing accouns for you to test
 
-#### patient ####
-
-| Account     | Details         |
+| **Patient**    | Details         |
 | ----------- | ----------- |
 | username      | patient1         |
 | email      | patient1@gmail.com         |
 | password      | patient1         |
 
-#### doctor ####
-
-| Account     | Details     |
+| **Doctor**     | Details     |
 | ----------- | ----------- |
 | username      | doctor1         |
 | email      | doctor1@gmail.com         |
