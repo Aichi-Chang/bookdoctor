@@ -168,7 +168,7 @@ export default function About() {
             <div className="content">
               
               <div className="container">
-                <img id="alert"src="https://i.imgur.com/5zpIWWB.gif"></img>
+                <img id="alert" src="https://i.imgur.com/5zpIWWB.gif"></img>
  
                 <p id="statwidth" className="title">
                   Live UK Stats 

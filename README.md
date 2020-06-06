@@ -14,23 +14,23 @@ We've also set up an email confirmation once an appointment is booked in our app
 #### Visit the site here - [Bookdoctor](https://bookdoctor.herokuapp.com/)
 
 
-### 📸 Preview
-
+### 🎥 Preview ###
+![ezgif com-video-to-gif](https://media.giphy.com/media/YrO11LriPyQZXQ1LP3/200w_d.gif)
 
 
 
 ### 💎 features ###
-* Set the default in the backend, user cannot choose the role while registering. The default role is ‘patient’. Doctors are registered as seeds in the database.
+- Set the default in the backend, user cannot choose the role while registering. The default role is ‘patient’. Doctors are registered as seeds in the database.
 
-* When an appointment is created, an appointment object will be created in the appointment collection in the database and be pushed to both doctor's and patient's appointment array. It also worked when deleting an appointment, the specific appointment object will be removed from these three collections.
+- When an appointment is created, an appointment object will be created in the appointment collection in the database and be pushed to both doctor's and patient's appointment array. It also worked when deleting an appointment, the specific appointment object will be removed from these three collections.
 
-* How to know if the doctor you want to see is available? By selecting a doctor from the drop-down list at the booking page, you will be able to see the doctor's booked appointments display in the calendar.
+- How to know if the doctor you want to see is available? By selecting a doctor from the drop-down list at the booking page, you will be able to see the doctor's booked appointments display in the calendar.
 
-* Similar rules apply to patients' medical history column, the small differences are that history will be able to write(create) by a doctor, and it will only be created in the history collection and be pushed to patient's history array. 
+- Similar rules apply to patients' medical history column, the small differences are that history will be able to write(create) by a doctor, and it will only be created in the history collection and be pushed to patient's history array. 
 
-* User dashboard shows all booked appointments and medical histories. User will also be able to delete their appointment if needed.
+- User dashboard shows all booked appointments and medical histories. User will also be able to delete their appointment if needed.
 
-* The confirmation email system will send out an email to confirm your appointment once booked.
+- The confirmation email system will send out an email to confirm your appointment once booked.
 
 
 ### :rocket: Get Started Locally ###
@@ -44,55 +44,63 @@ We've also set up an email confirmation once an appointment is booked in our app
 
 
 
-### 🕹 Technologies used ###
+### 🕹 Main Technologies Used ###
 
-#### Backend:
-Express, 
-NodeJS, 
-MongoDB Atlas, 
-Mongoose, 
-JWT, 
-SendGrid, 
-NHS Corona Virus API
-#### Frontend & UI:
-JavaScript, 
-React, 
-SASS & CSS, 
-MaterialUI, 
-Bulma
-#### Version Control: 
-Git , 
-GitHub
-#### Other: 
-Insomnia (API test), 
-Heroku (cloud platform for deployment), 
-Babel (JavaScript transcompiler), 
-Webpack (JavaScript module bundler)
-
-
+#### Backend: ####
+*Express, 
+*NodeJS, 
+*MongoDB Atlas, 
+*Mongoose, 
+*JWT, 
+*SendGrid, 
+*NHS Corona Virus API
+#### Frontend & UI: ####
+*JavaScript, 
+*React, 
+*SASS & CSS, 
+*MaterialUI, 
+*Bulma,
+*Art works credit to United Nation Covid19 Reponse
+#### Version Control: ####
+*Git, 
+*GitHub
+#### Other: ####
+*Insomnia (API test), 
+*Heroku (cloud platform for deployment), 
+*Babel (JavaScript transcompiler), 
+*Webpack (JavaScript module bundler)
 
 
 ### ✔️ Approach Taken ###
 
-
-
-#### Project Plan
-
-
-
-#### Back end
-
-
-#### Front end
-
-
-
-### 🤗 Wins ###
+#### Project Plan ####
+- Ideas research, Team brief, set up Trello
+- Set up (libraries, backend and frontend basic frame, Webpack...)
+- Backend functionality and authentication set up, test endpoints
+- Frontend UI desgin research, test API CRUD
+- Adding new features to both ends
+- Adding third party API
+- Secure route and user control
+- Sanitize user inputs
+- Styling and Troubleshooting
+- Deployment (debug and deploy)
 
 
 
 ### 🧐 Chanllenges ###
 
+
+
+
+### 🤗 Lesson Learned ###
+
+
+
+### 📸 snapshots ###
+![homepage](./assets/home.png)
+![booking](./assets/booking.png)
+![dashboard](assets/dashboard.png)
+![about](assets/about.png)
 
 
 
