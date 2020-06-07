@@ -88,7 +88,7 @@ router.route('/patients')
 
 router.route('/user/:id')
   .get(secureRoute, userFunc.show)
-
+  .delete(secureRoute, userFunc.remove)
 
 
 module.exports = router

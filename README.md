@@ -27,7 +27,7 @@ We've also set up an email confirmation once an appointment is booked in our app
 | email      | doctor1@gmail.com         |
 | password      | doctor1         |
 
-You can also register your own account(with real email). Please note that once registered, you're agree to us using and processing your data as your username will show in the doctors' patient list, and you will get an email sent from us if you book an appointment.
+You can also register your own account(with real email). Please note that once registered, you're agree to us using and processing your data as your username will display in the doctors' patient list, you will also recive an email sent from us if you book an appointment.
 
 
 
@@ -192,6 +192,7 @@ solved the problem.
 
 ### 🔮 Potential Future Features ###
 
+* When doctor is going to select a patient to write their medical history, they will be able to see all registered patients. We should check whether this is a real patient before putting the patients in doctor's patient list. This feature will reqiore manual check with the admin role in the backend and would require more information from the patient as well(their NI number, address and etc.)
 
 
 

@@ -78,7 +78,7 @@ function patients(req, res) {
 }
 
 
-// version 2.0
+// *********************** booking appointment function, version 2.0 is in the appointment controller ***********************
 // function showAppointment(req, res) {
 // // find the current user's appointments from the appointment collection
 //   Appointment
@@ -95,11 +95,24 @@ function patients(req, res) {
 //     .catch(err => res.json(err))
 // }
 
+
+function remove(req, res) {
+  User
+    .findOne({ _id: req.params.id })
+    .then(user => {
+      if (!user) return res.status(404).json({ message: 'User Not Found!' })
+      user.remove()
+      return res.status(200).json({ message: 'Your Account has been Deleted!' })
+    })
+}
+
+
 module.exports = {
   register,
   login,
   index,
   show,
   doctors,
-  patients
+  patients,
+  remove
 }

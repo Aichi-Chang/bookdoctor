@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-//mongoose.Promise = require('bluebird')
+// mongoose.Promise = require('bluebird')
 const { dbURI } = require('../config/environment')
-const User = require('')
+const User = require('../models/User')
 const Medicines = require('../models/medicines')
 const meds = require('./meds')
 
