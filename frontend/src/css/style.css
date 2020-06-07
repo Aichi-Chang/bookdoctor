@@ -188,7 +188,18 @@ h1 {
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
-  margin-top: 30px;
+}
+
+.dashboardNav {
+  border: 1px solid #41B6E6;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.dashboardContent {
+  background-image: url("https://66.media.tumblr.com/e5e4a78035d2db4535b1bf18a7ba78f3/tumblr_nwfphgd4tI1tf8vylo1_1280.png");
+  background-position: center center;
+  background-size: cover;
 }
 
 @media (min-width: 700px) {
@@ -196,7 +207,6 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
   }
 
@@ -245,7 +255,6 @@ h1 {
     border: 1px solid #41B6E6;
     border-radius: 100%;
     padding: 5px;
-    margin: 0 0 0 10px;
     transition: all 0.3s ease-in-out;
   }
   .dashboardNav:hover {
@@ -261,15 +270,21 @@ h1 {
   .dashboardFlexBox {
     display: flex;
     flex-direction: row;
-    align-items: center;
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .dashboardTitle {
-    font-size: 30px;
+    font-size: 42px;
     color: #41B6E6;
-    margin-right: 10px;
+    margin-right: 20px;
+  }
+
+  .dashboardContent {
+    height: 100vh;
+    background-image: url("https://66.media.tumblr.com/e5e4a78035d2db4535b1bf18a7ba78f3/tumblr_nwfphgd4tI1tf8vylo1_1280.png");
+    background-position: center center;
+    background-size: cover;
   }
 }
 

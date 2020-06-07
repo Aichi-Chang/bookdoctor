@@ -13,6 +13,7 @@ import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper' 
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import ChevronRightIcon from '@material-ui/icons/ChevronRight' 
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ListItems from './ListItems' 
 import MedicalHistory from './MedicalHistory' 
 import Auth from '../lib/auth'
@@ -65,9 +66,8 @@ const useStyles = makeStyles((theme) => ({
       width: theme.spacing(9)
     }
   },
-  appBarSpacer: theme.mixins.toolbar,
   content: {
-    flexGrow: 1,
+    height: '100vh',
     backgroundColor: '#faf6ef',
     backgroundImage: "url('https://66.media.tumblr.com/e5e4a78035d2db4535b1bf18a7ba78f3/tumblr_nwfphgd4tI1tf8vylo1_1280.png')",
     backgroundPosition: 'center center',
@@ -98,14 +98,14 @@ export default function Dashboard(props) {
   const classes = useStyles()
   
   const [singleUser, setSingleUser] = useState({})
-  // const [open, setOpen] = useState(false) 
+  const [open, setOpen] = useState(false) 
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight) 
-  const [top, setTop] = useState(false)
 
-  const handleDrawer = () => {
-    return open ? setOpen(false) : setOpen(true)
-  } 
- 
+
+  function toggleDrawer() {
+    open ? setOpen(false) : setOpen(true)
+  }
+  
 
   useEffect(() => {
     axios.get(`/api/user/${Auth.getUser().id}`, {
@@ -115,10 +115,6 @@ export default function Dashboard(props) {
       .catch(err => console.log(err))
   }, [])
 
-  const toggleDrawer = () => {
-    setTop(true)
-  }
-  
 
   const start = singleUser.appointment && singleUser.appointment.length - (singleUser.appointment.length - 2)
   const end = singleUser.appointment && singleUser.appointment.length
@@ -129,59 +125,28 @@ export default function Dashboard(props) {
   if (!singleUser.appointment) return <h1>Loading...</h1>
 
 
-
   return (
     <div className={classes.root}>
 
-      <div>
-        <a id='' onClick={() => toggleDrawer('top', true)}>open!</a>
-        <SwipeableDrawer
-          open={top}
-          onClose={() => toggleDrawer('top',false)}
-          onOpen={() => toggleDrawer('top',true)}
-          // variant="permanent"
-          // classes={{
-          //   paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose)
-          // }}
-          // open={open}
-        >
+      <SwipeableDrawer
+        anchor='top'
+        open={open}
+        onClose={() => toggleDrawer()}
+        onOpen={() => toggleDrawer()}
+      >
+        <ListItems open={open} props={props}/>
+      </SwipeableDrawer> 
 
-          <div
-            tabIndex={0}
-            role="button"
-            onClick={() => toggleDrawer('top', false)}
-            onKeyDown={() => toggleDrawer('top', false)}
-          >
-            <div className={classes.toolbarIcon}>
-              <IconButton onClick={() => handleDrawer()}>
-                {open ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-              </IconButton>
-            </div>
-            <Divider />
-            <ListItems open={open} props={props}/>
-            <Divider />
-          </div>
-        
-          
-          
-
-        </SwipeableDrawer> 
-
-
-      </div>
 
       
 
-      <main className={classes.content}>
+      <main className='dashboardContent'>
       
         <Container maxWidth="lg" className={classes.container}>
 
           <div className='dashboardFlexBox'>
             <h1 className='dashboardTitle'>Hello, {singleUser.username}</h1>
-            {/* <Avatar /> */}
-            {/* <a id='' onClick={() => handleDrawer()} className='dashboardNav'>
-              {open ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-            </a> */}
+            <a id='' className='dashboardNav' onClick={() => toggleDrawer()}><ExpandMoreIcon /></a>
           </div>
 
           <Grid container spacing={3}>

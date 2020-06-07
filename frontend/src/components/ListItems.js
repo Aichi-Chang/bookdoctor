@@ -56,7 +56,7 @@ export default function ListItems({ open, props }) {
     <div>
       <div className='navFlexBox'>
         <Avatar />
-        {open ? <h1>Hello, {`${Auth.getUser().username}`}</h1> : null}
+        {open ? <h1 style={{ marginLeft: '10px' }}>{`${Auth.getUser().username}`}</h1> : null}
       </div>
 
 
