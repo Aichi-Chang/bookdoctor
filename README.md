@@ -194,6 +194,7 @@ solved the problem.
 
 * When doctor is going to select a patient to write their medical history, they will be able to see all registered patients. We should check whether this is a real patient before putting the patients in doctor's patient list. This feature will reqiore manual check with the admin role in the backend and would require more information from the patient as well(their NI number, address and etc.)
 
+* Users will be able to choose their own avatar
 
 
 

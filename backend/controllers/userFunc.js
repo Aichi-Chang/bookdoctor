@@ -98,7 +98,7 @@ function patients(req, res) {
 
 function remove(req, res) {
   User
-    .findOne({ _id: req.params.id })
+    .findOne({ _id: req.currentUser._id })
     .then(user => {
       if (!user) return res.status(404).json({ message: 'User Not Found!' })
       user.remove()

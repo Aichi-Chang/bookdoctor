@@ -77,6 +77,7 @@ router.post('/login',
 
 router.route('/user')
   .get(secureRoute, userFunc.index)
+  .delete(secureRoute, userFunc.remove)
 
 
 router.route('/doctors')
@@ -88,7 +89,6 @@ router.route('/patients')
 
 router.route('/user/:id')
   .get(secureRoute, userFunc.show)
-  .delete(secureRoute, userFunc.remove)
 
 
 module.exports = router

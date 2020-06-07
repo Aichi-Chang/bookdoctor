@@ -24,7 +24,7 @@ export default function ImageAvatars() {
 
   return (
     <div className={classes.root}>
-      <Avatar alt="Travis Howard" src="https://i.imgur.com/OyRgWXW.jpg" className={classes.large} />
+      <Avatar alt="Travis Howard" src="https://images.unsplash.com/photo-1485735662814-c4f66e49dbae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" className={classes.large} />
     </div>
   )
 }

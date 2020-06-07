@@ -141,7 +141,7 @@ export default function Dashboard(props) {
           </IconButton>
         </div>
         <Divider />
-        <ListItems open={open}/>
+        <ListItems open={open} props={props}/>
         <Divider />
 
       </Drawer>
