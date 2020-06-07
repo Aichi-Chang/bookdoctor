@@ -125,11 +125,11 @@ export default function BookApp(props) {
       <Navbar />
       {Auth.isAuthenticated() ? <div className='bookPage'>
 
-        <Grid  item xs={6} sm={8} md={5} elevation={6} square="true">
+        <Grid  sm={8} md={5} elevation={6} square="true" className='calendarBooking'>
           {selectedDoc && selectedDoc[0] && <p className='doctorInfo'>Doctor:  <span style={{ color: '#41B6E6' }}>{selectedDoc[0].username}</span></p>}
           {selectedDoc && selectedDoc[0] && <p className='doctorInfo'>Expertise:  <span style={{ color: '#41B6E6' }}>{selectedDoc[0].expertise}</span></p>}
 
-          <MuiPickersUtilsProvider utils={DateFnsUtils}>
+          <MuiPickersUtilsProvider utils={DateFnsUtils} >
             <Picker 
               url={`/api/appointment/doc/${data.doctor ? data.doctor : null}`}
             />

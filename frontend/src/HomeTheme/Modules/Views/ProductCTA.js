@@ -14,11 +14,6 @@ const styles = (theme) => ({
     marginBottom: 0,
     display: 'flex',
   },
-  cardWrapper: {
-    zIndex: 1,
-    position: 'relative',
-    left: 80
-  },
   card: {
     display: 'flex',
     justifyContent: 'center',
@@ -73,7 +68,7 @@ function ProductCTA(props) {
     <Container className={classes.root} component="section">
       <Grid container>
 
-        <Grid item xs={12} md={6} className={classes.cardWrapper}>
+        <Grid item xs={12} md={6} className='cardWrapper'>
           <div className={classes.card}>
             <form onSubmit={handleSubmit} className={classes.cardContent}>
               <Typography variant="h2" component="h2" gutterBottom>

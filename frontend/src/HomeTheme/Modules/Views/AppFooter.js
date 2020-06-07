@@ -16,11 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(8),
-    marginLeft: theme.spacing(30),
-    // marginRight: theme.spacing(25),
-
-    display: 'flex'
+    marginBottom: theme.spacing(8)
   },
   iconsWrapper: {
     height: 120
@@ -77,21 +73,6 @@ export default function AppFooter() {
               </li>
             </ul>
           </Grid>
-
-          {/* <Grid item xs={6} sm={8} md={4}>
-            <Typography variant="h6" marked="left" gutterBottom>
-              Legal
-            </Typography>
-            <ul className={classes.list}>
-              <li className={classes.listItem}>
-                <Link href="/premium-themes/onepirate/terms/">Terms</Link>
-              </li>
-              <li className={classes.listItem}>
-                <Link href="/premium-themes/onepirate/privacy/">Privacy</Link>
-              </li>
-            </ul>
-          </Grid> */}
-
         
           <Grid item xs={6} sm={8} md={4}>
             <Typography variant="h6" marked="left" gutterBottom>

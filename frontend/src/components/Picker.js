@@ -67,7 +67,7 @@ export default function Picker({ url }) {
 
   return (
 
-    <div className='absolute calendar'>
+    <div className='calendar'>
 
       <ThemeProvider theme={materialTheme}>
         <DatePicker

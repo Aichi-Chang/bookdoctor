@@ -82,8 +82,8 @@ h1 {
 
 .homeTitle {
   color: black;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .homeContent {
@@ -139,36 +139,45 @@ h1 {
 
 .bookPage {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: $milk-white;
   background-image: url('https://66.media.tumblr.com/c15af69896662d398a955e53f807f060/tumblr_o9tylwXXiD1tf8vylo1_1280.png');
-  background-repeat: no-repeat;
-  background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 
 .formTitle {
   font-size: 28px;
   margin-bottom: 5px;
+  width: 300px;
 }
 
+.calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 430px;
+}
 
 .calendarTitle {
   font-size: 18px;
   color: $nhs-mid-gray;
   text-align: center;
   margin-bottom: 15px;
+  width: 500px;
 }
 
+.calendarBooking {
+  margin-top: 100px;
+}
+
+
 .dashboardTitle {
-  font-size: 30px;
-  color: $nhs-light-blue;
-  margin-bottom: 20px;
+  font-size: 24px;
+  color: $nhs-color;
+  margin-right: 10px;
 }
 
 .bookPageLogin {
@@ -207,6 +216,15 @@ h1 {
   align-items: center;
 }
 
+.dashboardFlexBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+
 
 
 @media (min-width: $large-screen) {
@@ -217,5 +235,78 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+
+  .cardWrapper{
+    position: relative;
+    left: 80px;
+    z-index: 1;
+  }
+
+  .homeTitle {
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .bookPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: $milk-white;
+    background-image: url('https://66.media.tumblr.com/c15af69896662d398a955e53f807f060/tumblr_o9tylwXXiD1tf8vylo1_1280.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .calendarBooking {
+    margin-top: 0;
+  }
+
+  .formTitle {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .calendarTitle {
+    font-size: 18px;
+    color: $nhs-mid-gray;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .dashboardNav {
+    border: 1px solid $nhs-light-blue;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 0 0 0 10px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: $nhs-light-blue;
+      // background-color: $milk-white;
+      border: .5px solid $nhs-color;
+      transform: scale(1.3);
+    }
+  }
+
+  .sideTaggle {
+    display: none;
+  }
+
+  .dashboardFlexBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  .dashboardTitle {
+    font-size: 30px;
+    color: $nhs-light-blue;
+    margin-right: 10px;
   }
 }

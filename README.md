@@ -6,7 +6,7 @@ The normal way of booking your GP appointment is to call your GP surgery. But as
 
 This appointment management system should come handy for both GP surgeries and their patients. So we've set up two login system for doctor and patient. Both roles will be able to book an appointment but only doctors can see the full patient list and write a medical history or prescribe medicines to their patients. when a patient logged in, they can check what medicine they've been prescribed, or any advice the doctor wants to give them.
 
-The other part of the booking system is, patients never know when a doctor is available. They will have to check again and again over the phone to find out the exact time that suits them and the doctor they want to see. At bookdoctor, we display doctors' booked appointment calendar, so users will be able to see clearly which day is still available for bookings. 
+The other difficult part of the original telephone booking is that patients never know when a doctor is available. They will have to check again and again over the phone to find out the exact time that suits them and the doctor they want to see. At bookdoctor, we display doctors' booked appointment calendar, so users will be able to see clearly which day is still available for bookings. 
 
 We've also set up an email confirmation once an appointment is booked in our application's beta period. It might change in the future that rather than sending out an email to confirm, we will also send out an email or an SMS as a reminder 2 days before their appointments.
 
@@ -193,6 +193,8 @@ solved the problem.
 ### 🔮 Potential Future Features ###
 
 * When doctor is going to select a patient to write their medical history, they will be able to see all registered patients. We should check whether this is a real patient before putting the patients in doctor's patient list. This feature will reqiore manual check with the admin role in the backend and would require more information from the patient as well(their NI number, address and etc.)
+
+* Set up a score system that if a patient did not show up for up to three times of their appointment, they will be moved to the black list and will be banned to use this online booking app. The surgery or the doctor could enter their patients' score manually, and if the array of score is >= 3 then they will be noted as black list patent.
 
 * Users will be able to choose their own avatar
 
