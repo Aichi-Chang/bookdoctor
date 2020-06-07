@@ -66,13 +66,6 @@ const useStyles = makeStyles((theme) => ({
       width: theme.spacing(9)
     }
   },
-  content: {
-    height: '100vh',
-    backgroundColor: '#faf6ef',
-    backgroundImage: "url('https://66.media.tumblr.com/e5e4a78035d2db4535b1bf18a7ba78f3/tumblr_nwfphgd4tI1tf8vylo1_1280.png')",
-    backgroundPosition: 'center center',
-    backgroundSize: 'cover'
-  },
   container: {
     marginLeft: '20px',
     paddingTop: theme.spacing(4),
@@ -200,7 +193,7 @@ export default function Dashboard(props) {
 
           
           <Box mt={18}>
-            <div>Copyright © <Link target='blank' className='links' to="https://github.com/soniacweb/bookdoctor">bookdoctor</Link>{' '}{new Date().getFullYear()}</div>
+          <div>Copyright © <a target='blank' className='links' href="https://github.com/Aichi-Chang/bookdoctor">bookdoctor</a>{' '}{new Date().getFullYear()}</div>
           </Box>
 
         </Container>

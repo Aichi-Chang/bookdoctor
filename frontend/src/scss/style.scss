@@ -190,7 +190,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .background {
@@ -269,6 +268,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
     background-color: $milk-white;
     background-image: url('https://66.media.tumblr.com/c15af69896662d398a955e53f807f060/tumblr_o9tylwXXiD1tf8vylo1_1280.png');
     background-repeat: no-repeat;
@@ -327,5 +327,7 @@ h1 {
     background-image: url('https://66.media.tumblr.com/e5e4a78035d2db4535b1bf18a7ba78f3/tumblr_nwfphgd4tI1tf8vylo1_1280.png');
     background-position: center center;
     background-size: cover;
+    background-repeat: repeat;
+    overflow: hidden;
   }
 }

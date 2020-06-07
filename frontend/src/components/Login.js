@@ -172,7 +172,7 @@ export default function Login(props) {
           <Link to="/register" className='links'>Don't have an account? Sign up</Link>
 
           <Box mt={5}>
-            <div>Copyright © <Link target='blank' className='links' to="https://github.com/soniacweb/bookdoctor">bookdoctor</Link>{' '}{new Date().getFullYear()}</div>
+          <div>Copyright © <a target='blank' className='links' href="https://github.com/Aichi-Chang/bookdoctor">bookdoctor</a>{' '}{new Date().getFullYear()}</div>
           </Box>
 
         </div>

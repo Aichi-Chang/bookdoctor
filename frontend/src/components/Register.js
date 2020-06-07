@@ -199,7 +199,7 @@ export default function Register(props) {
 
           <Box mt={5} className={classes.box}>
             <small style={{ color: 'red', textAlign: 'center', marginBottom: '20px' }}>By registering, I agree to bookdoctor saving and processing my data for demonstration purposes.</small>
-            <div>Copyright © <Link target='blank' className='links' to="https://github.com/soniacweb/bookdoctor">bookdoctor</Link>{' '}{new Date().getFullYear()}</div>
+            <div>Copyright © <a target='blank' className='links' href="https://github.com/Aichi-Chang/bookdoctor">bookdoctor</a>{' '}{new Date().getFullYear()}</div>
           </Box>
         </div>
       </Grid>
