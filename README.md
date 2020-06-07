@@ -13,7 +13,7 @@ We've also set up an email confirmation once an appointment is booked in our app
 
 #### 🔥 Visit the site here → [Bookdoctor](https://bookdoctor.herokuapp.com/) 🔥
 
-#### We've created a couple testing accouns for you to test
+#### We've created a couple testing accouns for you to test (Please don't delete these test accounts...)
 
 | **Patient**    | Details         |
 | ----------- | ----------- |
@@ -27,7 +27,7 @@ We've also set up an email confirmation once an appointment is booked in our app
 | email      | doctor1@gmail.com         |
 | password      | doctor1         |
 
-You can also register your own account(with real email). Please note that once registered, you're agree to us using and processing your data as your username will display in the doctors' patient list, you will also recive an email sent from us if you book an appointment.
+You can also register your own account(with real email). Please note that once registered, you're agree to us using and processing your data as your username will display in the doctors' patient list, you will also recive an email sent from us if you book an appointment. But you will be able to delete your account as well ;)
 
 
 
