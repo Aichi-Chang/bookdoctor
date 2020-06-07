@@ -126,7 +126,7 @@ export default function ListItems({ open, props }) {
             <DialogTitle id="alert-dialog-title">{'Delete Account?'}</DialogTitle>
             <DialogContent>
               <DialogContentText id="alert-dialog-description">
-                Sure you want leave us?
+                Sure you want to leave us?
               </DialogContentText>
             </DialogContent>
             <DialogActions>
