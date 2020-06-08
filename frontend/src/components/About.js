@@ -6,7 +6,7 @@ import 'bulma'
 import axios from 'axios'
 // import { Link } from 'react-router-dom'
 
-import AboutStats from './AboutStats' 
+// import AboutStats from './AboutStats' 
 
 export default function About() {
 
@@ -167,15 +167,15 @@ export default function About() {
           <article id="statcolumn" className="tile is-child notification">
             <div className="content">
               
-              <div className="container">
-                <img id="alert" src="https://i.imgur.com/5zpIWWB.gif"></img>
- 
+              <div className="flexBox">
+
                 <p id="statwidth" className="title">
+                  <img id="alert" src="https://i.imgur.com/5zpIWWB.gif"></img>
                   Live UK Stats 
                 </p>
 
               </div>
-              <AboutStats />
+              {/* <AboutStats /> */}
                 
         
               <div className="content">

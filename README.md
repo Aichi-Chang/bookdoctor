@@ -11,7 +11,7 @@ The other difficult part of the original telephone booking is that patients neve
 We've also set up an email confirmation once an appointment is booked in our application's beta period. It might change in the future that rather than sending out an email to confirm, we will also send out an email or an SMS as a reminder 2 days before their appointments.
 
 
-#### 🔥 Visit the site here → [Bookdoctor](https://bookdoctor.herokuapp.com/) 🔥
+#### 🔥 Visit the site here → [Bookdoctor](https://book-doctor.herokuapp.com/) 🔥
 
 #### We've created a couple testing accouns for you to test (Please don't delete these test accounts...)
 
@@ -61,6 +61,9 @@ You can also register your own account(with real email). Please note that once r
 * `npm run seed`
 * `npm run serve:back` to run backend
 * `npm run serve:front` to run frontend
+* You will need to apply for an API key from [SendGrid](https://sendgrid.com/) and create a .env file to store it
+* To run the project locally you will also need to create a dev.js file in the root with other variebles. (secret, dbURI and port)
+
 
 
 

@@ -203,6 +203,10 @@ h1 {
   background-size: cover;
 }
 
+#alert {
+  width: 50px;
+}
+
 @media (min-width: 700px) {
   .navFlexBox {
     display: flex;
@@ -290,6 +294,10 @@ h1 {
     background-size: cover;
     background-repeat: repeat;
     overflow: hidden;
+  }
+
+  #alert {
+    width: 50px;
   }
 }
 
