@@ -25,6 +25,7 @@ app.use(bodyParser.json())
 app.use((req, res, next) => {
   console.log(`${req.method} to ${req.url}`)
   res.header('Access-Control-Allow-Origin', '*')
+  // changed ''
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
   next()
 })

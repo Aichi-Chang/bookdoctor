@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config({ path: '.sendgrid.env' })
 
 const { validationResult } = require('express-validator')
 const Appointment = require('../models/Appointment')
